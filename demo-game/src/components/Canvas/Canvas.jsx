@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Sky from '../Sky/sky';
-import Ground from '../Ground/Ground';
+import Road from '../Road/Road';
 import CannonBase from '../CannonBase/CannonBase';
 import CannonPipe from '../CannonPipe/CannonPipe';
 import CannonBall from '../CannonBall/CannonBall'
@@ -17,8 +17,9 @@ const Canvas = (props) => {
   const gameHeight = 1200;
   const viewBox = [window.innerWidth / -2, 100 - gameHeight, window.innerWidth, gameHeight];
   return (
+    
     <svg
-      id="aliens-go-home-canvas"
+      id="basic-race-canvas"
       preserveAspectRatio="xMaxYMax none"
       onMouseMove={props.trackMouse}
       viewBox={viewBox}
@@ -30,7 +31,7 @@ const Canvas = (props) => {
         </filter>
       </defs>
       <Sky />
-      <Ground />
+      <Road />
       <CannonPipe rotation={props.angle} />
       <CannonBase />
       {props.gameState.cannonBalls.map(cannonBall => (
@@ -50,8 +51,9 @@ const Canvas = (props) => {
 
       { props.gameState.started &&
         <g>
-          <FlyingObject position={{x: -150, y: -300}}/>
-          <FlyingObject position={{x: 150, y: -300}}/>
+         
+          <FlyingObject position={{x: 0, y: -300}}/>
+          <FlyingObject position={{x: 0, y: -300}}/>
         </g>
       }
 

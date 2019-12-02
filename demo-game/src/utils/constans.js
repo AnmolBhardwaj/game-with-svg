@@ -6,9 +6,9 @@ export const viewBox = [window.innerWidth / -2, 100 - gameHeight, window.innerWi
 
 export const createInterval = 1000;
 
-export const maxFlyingObjects = 4;
+export const maxFlyingObjects = 6;
 
-export const flyingObjectsStarterYAxis = -1100;
+export const flyingObjectsStarterYAxis = -800;
 
 export const SHOOT = 'SHOOT';
 
@@ -22,10 +22,10 @@ export const shoot = (mousePosition) => ({
 
 
 export const flyingObjectsStarterPositions = [
-  -300,
-  -150,
-  150,
-  300,
+  0,
+  0,
+  0,
+  0,
 ];
 
 

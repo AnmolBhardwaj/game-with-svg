@@ -20,8 +20,8 @@ import {
     const flyingObjectPosition = flyingObjectsStarterPositions[predefinedPosition];
     const newFlyingObject = {
       position: {
-        x: flyingObjectPosition,
-        y: flyingObjectsStarterYAxis,
+        x: 0,
+        y: 0,
       },
       createdAt: (new Date()).getTime(),
       id,

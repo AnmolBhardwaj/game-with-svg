@@ -31,21 +31,21 @@ const CannonBase = (props) => {
       y: 0,
     },
   };
+  const tempStyle={
+    fill:'#fff',
+    transform:'rotateZ(270deg)'
+  }
 
+  const carStyle=
+  {
+   
+  }
   return (
-    <g>
-      <path
-        style={cannonBaseStyle}
-        d={pathFromBezierCurve(cubicBezierCurve)}
-      />
-      <line
-        x1={-halfBase}
-        y1={height}
-        x2={halfBase}
-        y2={height}
-        style={cannonBaseStyle}
-      />
-    </g>
+    <svg version="1.1" id="Capa_1"  x="-50px" y="-100px" height="200" width="200" style={tempStyle} >
+   <image style={carStyle} href="http://www.downloadclipart.net/svg/43146-brown-car-top-view-vector.svg" height="200" width="200"/>
+
+</svg>
+
   );
 };
 
