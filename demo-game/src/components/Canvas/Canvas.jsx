@@ -45,7 +45,7 @@ const Canvas = (props) => {
       { ! props.gameState.started &&
         <g>
           <StartGame onClick={() => props.startGame()} />
-          <Title />
+          
         </g>
       }
 

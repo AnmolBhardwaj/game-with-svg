@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import FlyingObjectBase from '../FlyingObjectBase/FlyingObjectBase';
 import FlyingObjectTop from '../FlyingObjectTop/FlyingObjectTop';
-import { gameHeight } from '../../utils/constans';
+import { gameHeight, viewBox } from '../../utils/constans';
 
 const moveVertically = keyframes`
   0% {
@@ -29,11 +29,15 @@ const FlyingObject = props => (
     <g>
       <rect
       x={-15}
-      y={100 - gameHeight}
+      y={350-gameHeight}
       width={30}
       height={100}
       style={stripes}
+      
+      
+      
       />
+    
     </g>
   </Move>
 );

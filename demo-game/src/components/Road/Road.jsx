@@ -7,7 +7,7 @@ const Road = () => {
     <g id="road">
       
 
-      <path fill="black" d="M -500,80 L -50,-1000 L 50,-1000 L 500,80 Z"></path>
+      <path fill="black" d="M -700,100 L 0,-800 L 0,-800 L 700,100 Z"></path>
     </g>
   );
 };
